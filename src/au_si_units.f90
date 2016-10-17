@@ -1,8 +1,8 @@
 module au_si_units
-  ! Conversion factors between atomic units (au) and SI units
+  ! Conversion factors between atomic units (a.u.) and SI units
   !
   ! Atomic units are defined as:
-  ! m_e = q_e = hbar = a0 = 1
+  ! m_e = q_e = hbar = k_e = a_0 = 1
   !
   ! Variables have names of the format:
   !   [unit name]_[au|si]_[sp|dp]
@@ -22,10 +22,9 @@ module au_si_units
   ! Longman Scientific & Technical (1983).
 
   ! Mass of electron (kg)
-  real(dp), parameter :: me_si_dp = 9.10953e-31_dp
-  real(sp), parameter :: me_si_sp = real(me_si_dp, kind=sp)
-  real(dp), parameter :: me_au_dp = 1.0_dp / me_si_dp
-  real(sp), parameter :: me_au_sp = real(me_au_dp, kind=sp)
+  real(dp), parameter :: au_si_me_dp = 9.10953e-31_dp
+  real(sp), parameter :: au_si_me_sp = real(au_si_me_dp, kind=sp)
+
 
   ! Absolute value of electron charge (C)
   real(dp), parameter :: qe_si_dp = 1.60219e-19_dp

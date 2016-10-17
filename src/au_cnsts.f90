@@ -5,17 +5,23 @@ module au_cnsts
 
   implicit none
 
-  ! Electron mass = 1 in au
+  ! Fundamental units: m_e = q_e = h_bar = k_e = 1
+
+  ! Electron mass (m_e)
   real(dp), parameter :: me_dp = 1.0_dp
   real(sp), parameter :: me_sp = real(me_dp, kind=sp)
 
-  ! Electron charge = 1 in au
+  ! Electron charge (q_e)
   real(dp), parameter :: qe_dp = 1.0_dp
   real(sp), parameter :: qe_sp = real(qe_dp, kind=sp)
 
-  ! hbar = 1 in au
+  ! Reduced Planck's constant (hbar)
   real(dp), parameter :: hbar_dp = 1.0_dp
   real(sp), parameter :: hbar_sp = real(hbar_dp, kind=sp)
+
+  ! Coulomb force constant (k_e)
+  real(dp), parameter :: ke_dp = 1.0_dp
+  real(sp), parameter :: ke_sp = real(ke_dp, kind=sp)
 
   ! Bohr radius for atomic hydrogen in infinite nuclear mass approximation
   real(dp), parameter :: a0_dp = 1.0_dp
