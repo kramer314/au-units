@@ -3,4 +3,4 @@
 
 Import("env")
 
-env.Library("au_units", source=Glob("*.f90"))
+env.SharedLibrary("au_units", source=Glob("*.f90"))

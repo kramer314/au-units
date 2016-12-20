@@ -78,7 +78,7 @@ module au_si_units
   real(dp), parameter :: f_au_dp = 1.0_dp / f_si_dp
   real(sp), parameter :: f_au_sp = real(f_au_dp, kind=sp)
 
-  ! Energy -- Twice the ionisation potential of oatomic hydrogen w/infinite nuclear mass (J)
+  ! Energy -- Twice the ionisation potential of atomic hydrogen w/infinite nuclear mass (J)
   real(dp), parameter :: e_si_dp = 4.35981e-18_dp
   real(sp), parameter :: e_sp_sp = real(e_si_dp, kind=sp)
   real(dp), parameter :: e_au_dp = 1.0_dp / e_si_dp
